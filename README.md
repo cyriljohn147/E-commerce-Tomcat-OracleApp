@@ -19,20 +19,20 @@ Setting Up the Oracle Database
 
 To run the Oracle database in a Docker container, follow these steps:
 
-	1.	Pull the Oracle Database Docker Image:
+1.	Pull the Oracle Database Docker Image:
 
-docker pull oracle/database:19.3.0-ee
-
-
-	2.	Run the Docker Container:
-
-docker run -d --name oracle19 -p 1521:1521 -e ORACLE_PWD=Cyriljohn147# oracle/database:19.3.0-ee
+		docker pull oracle/database:19.3.0-ee
 
 
-	3.	Access the Oracle Database:
+2.	Run the Docker Container:
 
-docker exec -it oracle19 bash
-sqlplus sys/Cyriljohn147# as sysdba
+		docker run -d --name oracle19 -p 1521:1521 -e ORACLE_PWD=Cyriljohn147# oracle/database:19.3.0-ee
+
+
+3.	Access the Oracle Database:
+
+		docker exec -it oracle19 bash
+		sqlplus sys/Cyriljohn147# as sysdba
 
 
 
