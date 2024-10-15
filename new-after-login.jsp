@@ -160,7 +160,7 @@
         </div>
     </section>
 <main>
-    <h1>Welcome to JerseyHub</h1>
+  <h1>Hi <%=name%> Welcome to JerseyHub</h1>
     <p>JerseyHub is your go-to destination for all things football jerseys. Discover a wide range of jerseys from your favorite teams and players, making it easy to show your support on and off the field. Whether you're at a game or watching from home, we've got the perfect jersey for you.</p>
     <p>Our platform is designed for an effortless shopping experience. From browsing the latest collections to fast and secure checkout, JerseyHub ensures you get the best jerseys without any hassle.</p>
     <a href="home.jsp" class="cta-button">Shop Now</a> 

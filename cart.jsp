@@ -70,13 +70,13 @@
     </section>
 
     <section id="clear">
-        <h3 class="text-center" style="color: black;">BILL</h3>
-        <div id="bill" class="text-center mb-4">0</div>
         <div class="row justify-content-center">
           <form action="clearCart.jsp" method="POST">
-            <button type="submit" id="clearCartButton" class="btn btn-outline-primary d-block mx-auto" style="margin-bottom: 50px;">CLEAR CART</button>
+            <button type="submit" id="clearCartButton" class="btn btn-outline-primary d-block mx-auto" style="margin-bottom: 50px">CLEAR CART</button>
           </form>
-            <button id="checkoutButton" class="btn btn-outline-primary d-block mx-auto" style="margin-bottom: 50px;">CHECKOUT</button>
+          <form action="clearCart.jsp" method="post" onSubmit="return sub();">
+            <button type="submit" id="checkoutButton" class="btn btn-outline-primary d-block mx-auto" style="margin-bottom: 50px">CHECKOUT</button>
+          </form>
         </div>
         
     </section>
@@ -119,6 +119,10 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script type="module" src="./scripts/cart.js"></script>
+    <script>
+      function sub() {
+            alert("Order has been placed");
+            }
+    </script>
 </body>
 </html>

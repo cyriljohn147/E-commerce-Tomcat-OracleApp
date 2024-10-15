@@ -1,43 +1,56 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Signup - Blinkit</title>
-    <link rel="stylesheet" href="styles\signup.css">
+    <title>ELITE JERSEYS</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="https://kit.fontawesome.com/dad03e859c.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="logo">
-                <h1>EasyBill</h1>
+    <div id="header">
+        <a href="#"><img src="./images/ejlogo.jpg"></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="./new-after-login.jsp">About</a></li>
+                <li><a href="./loginPage.html" class="active">Log In</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <section id="product1" class="section-p1">
+        <div class="container text-center" style="margin-top: 100px;">
+            <h2 class="mt-5" style="color: black;">LOGIN PAGE</h2>
+             <div class="row cart justify-content-center">
+                  <div class="face face-front">
+                    <div class="content">
+                      <h2>Sign in</h2>
+                      <form name="myform" action="register.jsp" method="post">
+                        <div class="field-wrapper form-group">
+                          <input type="text" id="username" class="form-control" name="username" placeholder="username">
+                        </div>
+                        <div class="field-wrapper form-group">
+                          <input type="text" id="email" class="form-control" name="email" placeholder="email">
+                        </div>
+                        <div class="field-wrapper form-group">
+                          <input type="password" id="password" class="form-control" name="password" placeholder="password" autocomplete="new-password">
+                        </div>
+                        <div class="field-wrapper form-group">
+                          <input id="submit" value="submit" type="submit" class="btn btn-primary">
+                        </div>
+                        <a href="./login.html">Already a User</a>
+                      </form>
+                    </div>
+                  </div>
             </div>
         </div>
-    </header>
-
-    <main>
-        <section class="signup">
-            <div class="container">
-                <h2>Create an Account</h2>
-                <form id="signup-form" method="post" action="register.jsp">
-                    <label for="username">Username:</label>
-                    <input type="text" id="username" name="username" required>
-
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-
-                    <label for="password">Password:</label>
-                    <input type="password" id="password" name="password" required>
-
-                    <label for="phone">Phone Number:</label>
-                    <input type="tel" id="phone" name="phone" pattern="\d{10}" required>
-
-                    <button type="submit">Sign Up</button>
-                </form>
-            </div>
-        </section>
-    </main>
-
-    <%@include file="footer.html"%>
+    </section>
 </body>
 </html>
+
+
+

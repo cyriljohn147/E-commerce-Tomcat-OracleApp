@@ -6,12 +6,12 @@
 <%@ page import="Implement.*" %>
         <%
             int validUser=0;
-            String userName=request.getParameter("username");
+            String username=request.getParameter("username");
             String password=request.getParameter("password");
             Implement i=new Implement();
-            validUser=i.userLogin(userName,password);
+            validUser=i.userLogin(username,password);
                 if(validUser==1){
-                        session.setAttribute("username",userName);
+                        session.setAttribute("username",username);
                         response.sendRedirect("new-after-login.jsp");
                   }
                   else if(validUser==2) {
