@@ -10,7 +10,7 @@
             Implement i=new Implement();
             int res = i.addCart(name);
             if(res==1) {
-              response.sendRedirect("cart.jsp");
+              response.sendRedirect("home.jsp");
             }
             else {
                     out.println("<p style='color:red;'>Adding to Cart Failed.</p>");

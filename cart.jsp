@@ -21,12 +21,11 @@
     int cartItemCount = i.getCartItemCount();
 %>
     <section id="header">
-        <a href="#"><img src="./images/ejlogo.jpg"></a>
+        <a href="#"><img style="border-radius: 15px;" src="./images/ejlogo.jpg"></a>
         <div>
             <ul id="navbar">
                 <li><a href="./home.jsp">Home</a></li>
-                <li><a href="./shop.html">Shop</a></li>
-                <!-- <li><a href="./about.html">About</a></li> -->
+                <li><a href="./about.html">About</a></li>
                 <li><a href="./login.html">Log Out</a></li>
                 <li><a href="./cart.html" id="lg-bag" class="active"><i class="fal fa-shopping-bag"></i></a>
                   <span id="quantity"><%=cartItemCount%></span>
@@ -85,7 +84,7 @@
         <div class="container">
             <div class="row footer">
                 <div class="col-md-4 mb-4">
-                    <a href="#"><img src="../img/ejlogo.jpg" alt="Logo" class="mb-3"></a>
+                    <a href="#"><img src="./images/ejlogo.jpg" alt="Logo" class="mb-3"></a>
                     <h4>Contact</h4>
                     <p><strong>Address:</strong> Anurag University, Ghatkesar, Hydrabad</p>
                     <p><strong>Phone:</strong> +23456876199, +23458903120</p>

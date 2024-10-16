@@ -119,22 +119,6 @@
             color: #333;
             margin-bottom: 20px;
         }
-
-        .features img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-            margin: 20px auto;
-        }
-
-        footer {
-            background-color: #ffffff;
-            border-top: 1px solid #e1e1e6;
-            padding: 15px 20px;
-            color: #333;
-            text-align: center;
-            margin-top: 20px;
-        }
     </style>
 </head>
 <body id="indexPage">
@@ -148,11 +132,11 @@
     int cartItemCount = i.getCartItemCount();
 %>
     <section id="header">
-        <a href="#"><img src="./images/ejlogo.jpg"></a>
+        <a href="#"><img style="border-radius:15px;" src="./images/ejlogo.jpg"></a>
         <div>
             <ul id="navbar">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="./new-after-login.jsp">About</a></li>
+                <li><a href="home.jsp">Home</a></li>
+                <li><a href="./new-after-login.jsp" class="active">About</a></li>
                 <li><a href="./login.html">Log Out</a></li>
                 <li><a href="./cart.jsp" id="lg-bag"><i class="fal fa-shopping-bag"></i></a>
                   <span id="quantity"><%=cartItemCount%></span>

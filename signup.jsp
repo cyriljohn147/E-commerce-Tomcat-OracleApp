@@ -13,7 +13,7 @@
 </head>
 <body>
     <div id="header">
-        <a href="#"><img src="./images/ejlogo.jpg"></a>
+        <a href="#"><img style="border-radius: 15px;" src="./images/ejlogo.jpg"></a>
         <div>
             <ul id="navbar">
                 <li><a href="./new-after-login.jsp">About</a></li>
@@ -24,7 +24,7 @@
 
     <section id="product1" class="section-p1">
         <div class="container text-center" style="margin-top: 100px;">
-            <h2 class="mt-5" style="color: black;">LOGIN PAGE</h2>
+            <h2 class="mt-5" style="color: black;">REGISTRATION PAGE</h2>
              <div class="row cart justify-content-center">
                   <div class="face face-front">
                     <div class="content">
@@ -41,8 +41,8 @@
                         </div>
                         <div class="field-wrapper form-group">
                           <input id="submit" value="submit" type="submit" class="btn btn-primary">
+                          <a href="./login.html">Already a User</a>
                         </div>
-                        <a href="./login.html">Already a User</a>
                       </form>
                     </div>
                   </div>

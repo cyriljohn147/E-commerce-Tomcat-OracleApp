@@ -16,16 +16,14 @@
   <%
     String name=(String)session.getAttribute("username");%>
     <% 
-    // Initialize the Implement class
     Implement i = new Implement();
-    // Get the number of items in the cart
     int cartItemCount = i.getCartItemCount();
 %>
     <section id="header">
-        <a href="#"><img src="./images/ejlogo.jpg"></a>
+        <a href="#"><img style="border-radius:15px;" src="./images/ejlogo.jpg"></a>
         <div>
             <ul id="navbar">
-                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="home.jsp" class="active">Home</a></li>
                 <li><a href="./new-after-login.jsp">About</a></li>
                 <li><a href="./login.html">Log Out</a></li>
                 <li><a href="./cart.jsp" id="lg-bag"><i class="fal fa-shopping-bag"></i></a>
@@ -62,8 +60,8 @@
                     <h5 class="card-title"><%=productName%></h5>
                       <div class="text-warning mb-2">
                       </div>
-                      <h4 class="text-primary"><%=price%></h4>
-                      <form action="addCart.jsp" method="POST">
+                      <h4 class="text-primary">&#8377;<%=price%></h4>
+                      <form action="addCart.jsp" method="POST" onSubmit="return addcart();">
                         <button type="submit" name="name" value="<%=productName%>" class="btn btn-success">
                         <i class="fas fa-shopping-cart"></i>
                       </button>
@@ -123,6 +121,10 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script type="module" src="./src/scripts/index.js"></script>
+    <script>
+      function addcart() {
+            alert("Item added to cart");
+            }
+    </script>
 </body>
 </html>

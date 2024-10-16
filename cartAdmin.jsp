@@ -45,7 +45,7 @@
     <nav>
         <div class="container">
             <div class="logo">
-                <img src="./images/ejlogo.jpg" alt="EasyBill Logo">
+                <img style="border-radius:15px;" src="./images/ejlogo.jpg" alt="EasyBill Logo">
             </div>
             <li><a href="login.html">Log Out</a></li>
         </div>
@@ -64,12 +64,12 @@
             i.items();
             while (i.r.next()) {
                 String productName = i.r.getString(1);
-                String price = i.r.getString(2);
+                String brand = i.r.getString(2);
         %>
 
                 <div class="product-item">
-                    <p><%= productName %></p>
-                    <h2>&#8377;<%= price %></h2>
+                    <p><%= brand %></p>
+                    <h2><%= productName %></h2>
                     <button class="Edit" data-product-name="<%= productName %>">Edit</button>
                     <button class="Remove" data-product-name="<%= productName %>">Remove</button>
                 </div>
